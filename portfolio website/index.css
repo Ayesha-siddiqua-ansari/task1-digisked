@@ -1,0 +1,376 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ddaba7;
+    
+  }
+  
+/* Header */
+#header {
+    background: linear-gradient(45deg, #55071b, #570a24);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#header nav ul li {
+    margin: 0 15px;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#header nav ul li a:hover {
+    color: #831631;
+}
+
+.header-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+.header-text span {
+    color: #851f39;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: #ddaba7;;
+    text-align: center;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about .about-col-1 {
+    width: 45%;
+    padding: 15px;
+}
+
+#about .about-col-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-col-2 {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+}
+
+#about .sub-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.tab-titles {
+    margin-top: 30px;
+}
+
+.tab-links {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.tab-links:hover {
+    background-color: #6d152b;
+    color: white;
+}
+
+.tab-contents {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+ul li span {
+    font-weight: bold;
+}
+/* Portfolio Section */
+#portfolio {
+    background-color: #ddaba7;;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+}
+
+#portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#portfolio .sub-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.work:hover img {
+    transform: scale(1.05);
+}
+
+.work .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.work:hover .layer {
+    opacity: 1;
+}
+
+.work .layer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.work .layer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.work .layer a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.work .layer a:hover {
+    color: #751d33;
+}
+
+#portfolio .btn {
+    background-color: #70182e;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 40px;
+    display: inline-block;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+#portfolio .btn:hover {
+    background-color: #631b33;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ddaba7;;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+}
+
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-left {
+    width: 50%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.contact-left .sub-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #555;
+    margin: 0 15px;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #5a2d72;
+}
+
+.contact-right {
+    width: 50%;
+    padding: 0 30px;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-right form button {
+    background-color: #5a2d72;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-right form button:hover {
+    background-color: #7a4c9d;
+}
+
+/* Footer */
+.copyright {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright i {
+    color: rgba(255, 0, 0, 0.342);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #header .container {
+        flex-direction: column;
+    }
+
+    #header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-col-1,
+    #about .about-col-2 {
+        width: 100%;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .work-list {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+} 
